@@ -1,1 +1,290 @@
+#Battleship juego
 
+#Jugadores:
+player1 = input("Jugador 1: ")
+player2 = input("Jugador 2: ")
+
+turno = 1
+
+#Barcos:
+Barcos = [2, 3, 3, 4, 5]
+
+#Player 1 Board:
+A1 = ["0","1","2","3","4","5","6","7","8","9"]
+B1 = ["0","1","2","3","4","5","6","7","8","9"]
+C1 = ["0","1","2","3","4","5","6","7","8","9"]
+D1 = ["0","1","2","3","4","5","6","7","8","9"]
+E1 = ["0","1","2","3","4","5","6","7","8","9"]
+F1 = ["0","1","2","3","4","5","6","7","8","9"]
+G1 = ["0","1","2","3","4","5","6","7","8","9"]
+H1 = ["0","1","2","3","4","5","6","7","8","9"]
+I1 = ["0","1","2","3","4","5","6","7","8","9"]
+J1 = ["0","1","2","3","4","5","6","7","8","9"]
+
+#Player 2 Board:
+A2 = [0,1,2,3,4,5,6,7,8,9]
+B2 = [0,1,2,3,4,5,6,7,8,9]
+C2 = [0,1,2,3,4,5,6,7,8,9]
+D2 = [0,1,2,3,4,5,6,7,8,9]
+E2 = [0,1,2,3,4,5,6,7,8,9]
+F2 = [0,1,2,3,4,5,6,7,8,9]
+G2 = [0,1,2,3,4,5,6,7,8,9]
+H2 = [0,1,2,3,4,5,6,7,8,9]
+I2 = [0,1,2,3,4,5,6,7,8,9]
+J2 = [0,1,2,3,4,5,6,7,8,9]
+
+def ubicarbarcos(player):
+    print("")
+    if player==player1:
+        print(player1,", ubique sus barcos")
+        for i in Barcos:
+            if i==2:
+                print("Ingrese coordenadas de barco de 2:")
+                for x in range(2):
+                    ubicacion = input("")
+                    coordenadas = ubicacion.split()
+                    fila = coordenadas[0]
+                    columna = int(coordenadas[1])-1
+                    if fila=="A":
+                        A1[columna] = "O"
+                    if fila=="B":
+                        B1[columna] = "O"
+                    if fila=="C":
+                        C1[columna] = "O"
+                    if fila=="D":
+                        D1[columna] = "O"
+                    if fila=="E":
+                        E1[columna] = "O"
+                    if fila=="F":
+                        F1[columna] = "O"
+                    if fila=="G":
+                        G1[columna] = "O"
+                    if fila=="H":
+                        H1[columna] = "O"
+                    if fila=="I":
+                        I1[columna] = "O"
+                    if fila=="J":
+                        J1[columna] = "O"
+            if i==3:
+                print("Ingrese coordenadas de barco de 3:")
+                for x in range(3):
+                    ubicacion = input("")
+                    coordenadas = ubicacion.split()
+                    fila = coordenadas[0]
+                    columna = int(coordenadas[1])-1
+                    if fila=="A":
+                        if A1[columna] != "O":
+                            A1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="B":
+                        if B1[columna] != "O":
+                            B1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="C":
+                        if C1[columna] != "O":
+                            C1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="D":
+                        if D1[columna] != "O":
+                            D1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="E":
+                        if E1[columna] != "O":
+                            E1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="F":
+                        if F1[columna] != "O":
+                            F1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="G":
+                        if G1[columna] != "O":
+                            G1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="H":
+                        if H1[columna] != "O":
+                            H1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="I":
+                        if I1[columna] != "O":
+                            I1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="J":
+                        if J1[columna] != "O":
+                            J1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+            if i==4:
+                print("Ingrese coordenadas de barco de 4:")
+                for x in range(4):
+                    ubicacion = input("")
+                    coordenadas = ubicacion.split()
+                    fila = coordenadas[0]
+                    columna = int(coordenadas[1])-1
+                    if fila=="A":
+                        if A1[columna] != "O":
+                            A1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="B":
+                        if B1[columna] != "O":
+                            B1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="C":
+                        if C1[columna] != "O":
+                            C1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="D":
+                        if D1[columna] != "O":
+                            D1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="E":
+                        if E1[columna] != "O":
+                            E1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="F":
+                        if F1[columna] != "O":
+                            F1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="G":
+                        if G1[columna] != "O":
+                            G1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="H":
+                        if H1[columna] != "O":
+                            H1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="I":
+                        if I1[columna] != "O":
+                            I1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="J":
+                        if J1[columna] != "O":
+                            J1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+            if i==5:
+                print("Ingrese coordenadas de barco de 5:")
+                for x in range(5):
+                    ubicacion = input("")
+                    coordenadas = ubicacion.split()
+                    fila = coordenadas[0]
+                    columna = int(coordenadas[1])-1
+                    if fila=="A":
+                        if A1[columna] != "O":
+                            A1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="B":
+                        if B1[columna] != "O":
+                            B1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="C":
+                        if C1[columna] != "O":
+                            C1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="D":
+                        if D1[columna] != "O":
+                            D1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="E":
+                        if E1[columna] != "O":
+                            E1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="F":
+                        if F1[columna] != "O":
+                            F1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="G":
+                        if G1[columna] != "O":
+                            G1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="H":
+                        if H1[columna] != "O":
+                            H1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="I":
+                        if I1[columna] != "O":
+                            I1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+                    if fila=="J":
+                        if J1[columna] != "O":
+                            J1[columna] = "O"
+                        else:
+                            print("Ya existe un barco en esta ubicación. Ingrese una nueva:")
+                            x=x-1
+
+
+ubicarbarcos(player1)
+print(A1)
+print(B1)
+print(C1)
+print(D1)
+print(E1)
+print(F1)
+print(G1)
+print(H1)
+print(I1)
+print(J1)
+
+#def juagada(player):
+#    if player=="player1":
+#        coordenada = input("Coordenada: ")
+#        ataque = coordenada.split()
+#        letra = ataque[0]
+#        numero = ataque[1]
+#        if letra[numero+1]==
+#            letra[numero+1]=
