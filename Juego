@@ -265,11 +265,7 @@ def ataque(player):
         hp = H1
         ip = I1
         jp = J1
-        vida2 = vida2A
-        vida3 = vida3A
-        vida30 = vida30A
-        vida4 = vida4A
-        vida5 = vida5A
+        vidas = vidas1
     if player==player1:
         ap = A2
         bp = B2
@@ -281,310 +277,346 @@ def ataque(player):
         hp = H2
         ip = I2
         jp = J2
-        vida2 = vida2B
-        vida3 = vida3B
-        vida30 = vida30B
-        vida4 = vida4B
-        vida5 = vida5B
+        vidas = vidas2
     if fila=="A":
-        if ap[columna] in numeros:
-            if ap[columna] == "II":
-                ap[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif ap[columna]=="III":
-                ap[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif ap[columna]=="III0":
-                ap[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif ap[columna]=="IV":
-                ap[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif ap[columna]=="V":
-                ap[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if ap[columna] == "II":
+            ap[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif ap[columna]=="III":
+            ap[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif ap[columna]=="III0":
+            ap[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif ap[columna]=="IV":
+            ap[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif ap[columna]=="V":
+            ap[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="B":
-        if bp[columna] in numeros:
-            if bp[columna] == "II":
-                bp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif bp[columna]=="III":
-                bp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif bp[columna]=="III0":
-                bp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif bp[columna]=="IV":
-                bp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif bp[columna]=="V":
-                bp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if bp[columna] == "II":
+            bp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif bp[columna]=="III":
+            bp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif bp[columna]=="III0":
+            bp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif bp[columna]=="IV":
+            bp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif bp[columna]=="V":
+            bp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="C":
-        if cp[columna] in numeros:
-            if cp[columna] == "II":
-                cp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif cp[columna]=="III":
-                cp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif cp[columna]=="III0":
-                cp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif cp[columna]=="IV":
-                cp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif cp[columna]=="V":
-                cp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if cp[columna] == "II":
+            cp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif cp[columna]=="III":
+            cp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif cp[columna]=="III0":
+            cp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif cp[columna]=="IV":
+            cp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif cp[columna]=="V":
+            cp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="D":
-        if dp[columna] in numeros:
-            if dp[columna] == "II":
-                dp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif dp[columna]=="III":
-                dp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif dp[columna]=="III0":
-                dp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif dp[columna]=="IV":
-                dp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif dp[columna]=="V":
-                dp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if dp[columna] == "II":
+            dp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif dp[columna]=="III":
+            dp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif dp[columna]=="III0":
+            dp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif dp[columna]=="IV":
+            dp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif dp[columna]=="V":
+            dp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="E":
-        if ep[columna] in numeros:
-            if ep[columna] == "II":
-                ep[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif ep[columna]=="III":
-                ep[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif ep[columna]=="III0":
-                ep[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif ep[columna]=="IV":
-                ep[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif ep[columna]=="V":
-                ep[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if ep[columna] == "II":
+            ep[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif ep[columna]=="III":
+            ep[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif ep[columna]=="III0":
+            ep[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif ep[columna]=="IV":
+            ep[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif ep[columna]=="V":
+            ep[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="F":
-        if fp[columna] in numeros:
-            if fp[columna] == "II":
-                fp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif fp[columna]=="III":
-                fp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif fp[columna]=="III0":
-                fp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif fp[columna]=="IV":
-                fp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif fp[columna]=="V":
-                fp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if fp[columna] == "II":
+            fp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif fp[columna]=="III":
+            fp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif fp[columna]=="III0":
+            fp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif fp[columna]=="IV":
+            fp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif fp[columna]=="V":
+            fp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="G":
-        if gp[columna] in numeros:
-            if gp[columna] == "II":
-                gp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif gp[columna]=="III":
-                gp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif gp[columna]=="III0":
-                gp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif gp[columna]=="IV":
-                gp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif gp[columna]=="V":
-                gp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if gp[columna] == "II":
+            gp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif gp[columna]=="III":
+            gp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif gp[columna]=="III0":
+            gp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif gp[columna]=="IV":
+            gp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif gp[columna]=="V":
+            gp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="H":
-        if hp[columna] in numeros:
-            if hp[columna] == "II":
-                hp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif hp[columna]=="III":
-                hp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif hp[columna]=="III0":
-                hp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif hp[columna]=="IV":
-                hp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif hp[columna]=="V":
-                hp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if hp[columna] == "II":
+            hp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif hp[columna]=="III":
+            hp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif hp[columna]=="III0":
+            hp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif hp[columna]=="IV":
+            hp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif hp[columna]=="V":
+            hp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="I":
-        if ip[columna] in numeros:
-            if ip[columna] == "II":
-                ip[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif ip[columna]=="III":
-                ip[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif ip[columna]=="III0":
-                ip[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif ip[columna]=="IV":
-                ip[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif ip[columna]=="V":
-                ip[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if ip[columna] == "II":
+            ip[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif ip[columna]=="III":
+            ip[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif ip[columna]=="III0":
+            ip[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif ip[columna]=="IV":
+            ip[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif ip[columna]=="V":
+            ip[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
     if fila=="J":
-        if jp[columna] in numeros:
-            if jp[columna] == "II":
-                jp[columna] = "X"
-                vida2 += (-1)
-                if vida2==0:
-                    print("¡Hunidste el barco!")
-            elif jp[columna]=="III":
-                jp[columna] = "X"
-                vida3 += (-1)
-                if vida3==0:
-                    print("¡Hunidste el barco!")
-            elif jp[columna]=="III0":
-                jp[columna] = "X"
-                vida30 += (-1)
-                if vida30==0:
-                    print("¡Hunidste el barco!")
-            elif jp[columna]=="IV":
-                jp[columna] = "X"
-                vida4 += (-1)
-                if vida4==0:
-                    print("¡Hunidste el barco!")
-            elif jp[columna]=="V":
-                jp[columna] = "X"
-                vida5 += (-1)
-                if vida5==0:
-                    print("¡Hunidste el barco!")
-            else:
-                print("Fallaste.")
+        if jp[columna] == "II":
+            jp[columna] = "X"
+            print("¡Le diste!")
+            vidas[0] = vidas[0]-1
+            if vidas[0]==0:
+                print("¡Hunidste el barco!")
+        elif jp[columna]=="III":
+            jp[columna] = "X"
+            print("¡Le diste!")
+            vidas[1] = vidas[1]-1
+            if vidas[1]==0:
+                print("¡Hunidste el barco!")
+        elif jp[columna]=="III0":
+            jp[columna] = "X"
+            print("¡Le diste!")
+            vidas[2] = vidas[2]-1
+            if vidas[2]==0:
+                print("¡Hunidste el barco!")
+        elif jp[columna]=="IV":
+            jp[columna] = "X"
+            print("¡Le diste!")
+            vidas[3] += (-1)
+            if vidas[3]==0:
+                print("¡Hunidste el barco!")
+        elif jp[columna]=="V":
+            jp[columna] = "X"
+            print("¡Le diste!")
+            vidas[4] += (-1)
+            if vidas[4]==0:
+                print("¡Hunidste el barco!")
+        else:
+            print("Fallaste.")
 
 
 
-def jugada(turno):
-    if turno==1:
+def jugada(player):
+    if player==player1:
         print("Es turno de",player1)
         ataque(player1)
         turno=2
-    else:
+    elif player==player2:
         print("Es turno de",player2)
         ataque(player2)
         turno=1
@@ -609,18 +641,10 @@ turno = 1
 Barcos = [2, 3, 30, 4, 5]
 
 #Jugador1
-vida2A = 2
-vida3A = 3
-vida30A = 3
-vida4A = 4
-vida5A = 5
+vidas1 = [2,0,0,0,0]
 
 #Jugador2
-vida2B = 2
-vida3B = 3
-vida30B = 3
-vida4B = 4
-vida5B = 5
+vidas2 = [2,3,3,4,5]
 
 #Player 1 Board:
 A1 = ["0","1","2","3","4","5","6","7","8","9"]
@@ -650,23 +674,19 @@ J2 = ["0","1","2","3","4","5","6","7","8","9"]
 ubicarbarcos(player1)
 ubicarbarcos(player2)
 while True:
-    jugada(turno)
-    if (vida2A+vida3A+vida30A+vida4A+vida5A)==0:
+    if turno==1:
+        jugada(player1)
+        turno=2
+    else:
+        jugada(player2)
+        turno=1
+    if sum(vidas1)==0:
         ganador = player2
         break
-    if (vida2B+vida3B+vida30B+vida4B+vida5B)==0:
+    if sum(vidas2)==0:
         ganador = player1
         break
 
+print("")
+print("")
 print("El ganador es",ganador)
-
-print(A1)
-print(B1)
-print(C1)
-print(D1)
-print(E1)
-print(F1)
-print(G1)
-print(H1)
-print(I1)
-print(J1)
