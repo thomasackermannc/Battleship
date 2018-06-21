@@ -641,7 +641,7 @@ turno = 1
 Barcos = [2, 3, 30, 4, 5]
 
 #Jugador1
-vidas1 = [2,0,0,0,0]
+vidas1 = [2,3,3,4,5]
 
 #Jugador2
 vidas2 = [2,3,3,4,5]
