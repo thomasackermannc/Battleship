@@ -673,6 +673,8 @@ J2 = ["0","1","2","3","4","5","6","7","8","9"]
 
 ubicarbarcos(player1)
 ubicarbarcos(player2)
+print("")
+print("")
 while True:
     if turno==1:
         jugada(player1)
